@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 import axios from "axios";
-const domain = 'http://api.finsvodka.ru/';
+const domain = 'http://api.finsvodka.ru';
 //const domain = 'http://banki-scrawler.loc';
 (async () => {
     const browser = await puppeteer.launch({
