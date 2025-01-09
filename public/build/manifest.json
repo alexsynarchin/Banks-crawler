@@ -1,0 +1,154 @@
+{
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BOrJxbIo.woff",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-BtvjY1KL.woff2",
+    "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CUJ9P7mJ.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/views/error-page/401.vue",
+      "resources/js/views/error-page/404.vue",
+      "resources/js/views/banks/index.vue",
+      "resources/js/views/login/index.vue",
+      "resources/js/views/login/AuthRedirect.vue",
+      "resources/js/views/error-page/404.vue",
+      "resources/js/views/error-page/401.vue",
+      "resources/js/views/dashboard/index.vue",
+      "resources/js/views/credits/index.vue",
+      "resources/js/views/user-profile/index.vue"
+    ],
+    "css": [
+      "assets/app-DMZkTsBa.css"
+    ],
+    "assets": [
+      "assets/no-avatar-user-CnBpVZMj.png",
+      "assets/favicon-2AnSL6JK.png",
+      "assets/bootstrap-icons-BtvjY1KL.woff2",
+      "assets/bootstrap-icons-BOrJxbIo.woff"
+    ]
+  },
+  "resources/js/assets/401_images/401.gif": {
+    "file": "assets/401-HGF6Q5qM.gif",
+    "src": "resources/js/assets/401_images/401.gif"
+  },
+  "resources/js/assets/401_images/401.jpg": {
+    "file": "assets/401-Dsr_B9-m.jpg",
+    "src": "resources/js/assets/401_images/401.jpg"
+  },
+  "resources/js/assets/404_images/404.png": {
+    "file": "assets/404-ECYDwuG_.png",
+    "src": "resources/js/assets/404_images/404.png"
+  },
+  "resources/js/assets/404_images/404_cloud.png": {
+    "file": "assets/404_cloud-BO-lsmUH.png",
+    "src": "resources/js/assets/404_images/404_cloud.png"
+  },
+  "resources/js/assets/base/favicon.png": {
+    "file": "assets/favicon-2AnSL6JK.png",
+    "src": "resources/js/assets/base/favicon.png"
+  },
+  "resources/js/assets/login/login-bg.jpeg": {
+    "file": "assets/login-bg-DdOAgGy1.jpeg",
+    "src": "resources/js/assets/login/login-bg.jpeg"
+  },
+  "resources/js/assets/user/no-avatar-user.png": {
+    "file": "assets/no-avatar-user-CnBpVZMj.png",
+    "src": "resources/js/assets/user/no-avatar-user.png"
+  },
+  "resources/js/views/banks/index.vue": {
+    "file": "assets/index-CCbkAndh.js",
+    "name": "index",
+    "src": "resources/js/views/banks/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/views/credits/index.vue": {
+    "file": "assets/index-D0lWr1BO.js",
+    "name": "index",
+    "src": "resources/js/views/credits/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/views/dashboard/index.vue": {
+    "file": "assets/index-B5C5C8Sf.js",
+    "name": "index",
+    "src": "resources/js/views/dashboard/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/views/error-page/401.vue": {
+    "file": "assets/401-Bo_RStY3.js",
+    "name": "401",
+    "src": "resources/js/views/error-page/401.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/401-Ciog0bI8.css"
+    ],
+    "assets": [
+      "assets/401-HGF6Q5qM.gif",
+      "assets/401-Dsr_B9-m.jpg"
+    ]
+  },
+  "resources/js/views/error-page/404.vue": {
+    "file": "assets/404-CPGKL3ny.js",
+    "name": "404",
+    "src": "resources/js/views/error-page/404.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/404-COP8-7Zv.css"
+    ],
+    "assets": [
+      "assets/404-ECYDwuG_.png",
+      "assets/404_cloud-BO-lsmUH.png"
+    ]
+  },
+  "resources/js/views/login/AuthRedirect.vue": {
+    "file": "assets/AuthRedirect-B30fEeaR.js",
+    "name": "AuthRedirect",
+    "src": "resources/js/views/login/AuthRedirect.vue",
+    "isDynamicEntry": true
+  },
+  "resources/js/views/login/index.vue": {
+    "file": "assets/index-BkcXnwXU.js",
+    "name": "index",
+    "src": "resources/js/views/login/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "css": [
+      "assets/index-BNuHsDPz.css"
+    ],
+    "assets": [
+      "assets/login-bg-DdOAgGy1.jpeg"
+    ]
+  },
+  "resources/js/views/user-profile/index.vue": {
+    "file": "assets/index-s5dPGsyg.js",
+    "name": "index",
+    "src": "resources/js/views/user-profile/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  }
+}
