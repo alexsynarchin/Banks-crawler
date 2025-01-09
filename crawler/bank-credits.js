@@ -4,7 +4,9 @@ import * as querystring from "node:querystring";
 const inputs = process.argv
 const bank_id = querystring.parse(inputs[2] || '').bank_id;
 const link = querystring.parse(inputs[3] || '').link
-//const link= 'https://www.sravni.ru/bank/alfa-bank/kredity/';
+const domain = 'http://api.finsvodka.ru/';
+//const domain = 'http://banki-scrawler.loc';
+//const link= 'https://www.sravni.ru/bank/alfa-bank/kredity';
 //const bank_id = 1;
 function timeout(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -103,7 +105,7 @@ function timeout(ms) {
                 // Handle the error as needed
             }
         }
-        axios.post('http://banki-scrawler.loc/api/credits/store-or-update', {bank_id: bank_id, data: data})
+        axios.post(domain + '/api/credits/store-or-update', {bank_id: bank_id, data: data})
             .then((response) => {
                 console.log(response.data);
             })

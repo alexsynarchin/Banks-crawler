@@ -1,5 +1,7 @@
 import puppeteer from 'puppeteer';
 import axios from "axios";
+const domain = 'http://api.finsvodka.ru/';
+//const domain = 'http://banki-scrawler.loc';
 (async () => {
     const browser = await puppeteer.launch({
         headless: true,
@@ -84,7 +86,7 @@ import axios from "axios";
         i++;
     }
     console.log(data);
-    axios.post('http://banki-scrawler.loc/api/banks/store-or-update', {data: data})
+    axios.post(domain + '/api/banks/store-or-update', {data: data})
         .then((response) => {
             console.log(response.data);
         })
