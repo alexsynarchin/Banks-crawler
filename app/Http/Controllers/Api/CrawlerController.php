@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Jobs\ProcessBankCredits;
+use App\Jobs\ProcessBanks;
 use App\Models\Bank;
 use App\Services\ShellCommand;
 
@@ -22,6 +23,7 @@ class CrawlerController extends Controller
                 'type' => 'warning'
             ];
         }
+        dispatch(new ProcessBanks());
         return [
             'message ' => 'Парсинг банков со sravni.ru запущен',
             'type' => 'success'
