@@ -1,0 +1,26 @@
+.inf-item-list {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    &__item {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        &--progress-bar {
+            align-items: center;
+        }
+    }
+    &__values {
+        flex: 1 1 70%;
+        display: flex;
+        column-gap: 10px;
+    }
+    &__progress-bar {
+        flex: 1 1 70%;
+    }
+    &__label {
+        flex: 1 1 30%;
+        font-size: 16px;
+        color: $gray-dark;
+    }
+}

@@ -1,0 +1,16 @@
+
+.disabled-form {
+    .el-input.is-disabled .el-input__inner {
+
+        color: #606266;;
+        cursor: auto;
+    }
+    .el-textarea.is-disabled .el-textarea__inner {
+        color: #606266;;
+        cursor: auto;
+    }
+}
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}

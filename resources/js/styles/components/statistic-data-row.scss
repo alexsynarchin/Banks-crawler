@@ -1,0 +1,126 @@
+.statistic-data-row {
+    height: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    $statistic_top_blue_color:#54abe1;
+    $statistic__top_green_color: #8fe2b3;
+    $statistic_red_color: #ea6d64;
+    &--none {
+        background-color: #F6E9C5;
+    }
+    &--down-0 {
+        background-color:  lighten($statistic_red_color, 32);
+    }
+    &--down-1 {
+        background-color:  lighten($statistic_red_color, 30);
+    }
+    &--down-2 {
+        background-color:  lighten($statistic_red_color, 26);
+    }
+    &--down-3 {
+        background-color:  lighten($statistic_red_color, 24);
+    }
+    &--down-4 {
+        background-color:  lighten($statistic_red_color, 20);
+    }
+    &--down-5 {
+        background-color:  lighten($statistic_red_color, 16);
+    }
+    &--down-6 {
+        background-color:  lighten($statistic_red_color, 12);
+    }
+    &--down-7 {
+        background-color:  lighten($statistic_red_color, 8);
+    }
+    &--down-8 {
+        background-color:  lighten($statistic_red_color, 4);
+    }
+    &--down-9 {
+        background-color: $statistic_red_color;
+    }
+    &--upper-0 {
+        background-color:  lighten($statistic__top_green_color, 26);
+    }
+    &--upper-1 {
+        background-color:  lighten($statistic__top_green_color, 22);
+    }
+    &-upper-2 {
+        background-color:  lighten($statistic__top_green_color, 18);
+    }
+    &-upper-3 {
+        background-color:  lighten($statistic__top_green_color, 14);
+    }
+    &-upper-4 {
+        background-color:  lighten($statistic__top_green_color, 10);
+    }
+    &-upper-5 {
+        background-color:  lighten($statistic__top_green_color, 8);
+    }
+    &-upper-6 {
+        background-color:  lighten($statistic__top_green_color, 6);
+    }
+    &-upper-7 {
+        background-color:  lighten($statistic__top_green_color, 4);
+    }
+    &-upper-8 {
+        background-color:  lighten($statistic__top_green_color, 2);
+    }
+    &-upper-9 {
+        background-color:  $statistic__top_green_color;
+    }
+    &--progress-fall {
+        background: #fbe1df;
+    }
+    &--progress-up {
+        background-color: #edf9f3;
+    }
+    &--progress-up-page {
+        background-color: #def6e9;
+    }
+    &--1 {
+        background-color: $statistic_top_blue_color;
+    }
+    &--2 {
+        background-color: lighten($statistic_top_blue_color, 10);
+    }
+    &--3 {
+        background-color: lighten($statistic_top_blue_color, 20);
+    }
+    &--4 {
+        background-color:  $statistic__top_green_color;
+    }
+    &--5 {
+        background-color: #99e4b9;
+    }
+    &--6 {
+        background-color: #a1e8c0;
+    }
+    &--7 {
+        background-color: #aceac6;
+    }
+    &--8 {
+        background-color: #b5eccd;
+    }
+    &--9 {
+        background-color: #beeed3;
+    }
+    &--10 {
+        background:#c8f0da;
+    }
+
+}
+.statistic-data-row {
+
+    &__position {
+        font-size: 16px;
+    }
+    &__additional {
+        font-size: 13px;
+    }
+    &__additional-label {
+        color: #909399;
+    }
+    &__additional-value {
+
+    }
+}

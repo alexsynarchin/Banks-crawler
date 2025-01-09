@@ -1,0 +1,9 @@
+.statistic-calendar {
+    .el-picker-panel__sidebar {
+        width:150px;
+    }
+    .el-picker-panel__sidebar+.el-picker-panel__body {
+        margin-left: 150px;
+    }
+
+}

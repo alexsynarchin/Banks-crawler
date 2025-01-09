@@ -1,0 +1,64 @@
+@use "~bootstrap/scss/mixins/banner" as *;
+
+
+$include-column-box-sizing: true !default;
+
+@use "~bootstrap/scss/functions"  as *;
+@use "~bootstrap/scss/variables"  as *;
+@use "~bootstrap/scss/maps"  as *;
+
+@use "~bootstrap/scss/mixins/lists" as *;
+@use "~bootstrap/scss/mixins/breakpoints" as *;
+@use "~bootstrap/scss/mixins/container" as *;
+@use "~bootstrap/scss/mixins/grid" as *;
+@use "~bootstrap/scss/mixins/utilities" as *;
+
+@use "~bootstrap/scss/vendor/rfs"  as *;
+
+@use "~bootstrap/scss/root"  as *;
+
+@use "~bootstrap/scss/containers" as *;
+@use "~bootstrap/scss/grid" as *;
+
+@use "~bootstrap/scss/utilities" as *;
+// Only use the utilities we need
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    "display",
+    "order",
+    "flex",
+    "flex-direction",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "align-items",
+    "align-content",
+    "align-self",
+    "margin",
+    "margin-x",
+    "margin-y",
+    "margin-top",
+    "margin-end",
+    "margin-bottom",
+    "margin-start",
+    "negative-margin",
+    "negative-margin-x",
+    "negative-margin-y",
+    "negative-margin-top",
+    "negative-margin-end",
+    "negative-margin-bottom",
+    "negative-margin-start",
+    "padding",
+    "padding-x",
+    "padding-y",
+    "padding-top",
+    "padding-end",
+    "padding-bottom",
+    "padding-start",
+  )
+);
+
+@use "~bootstrap/scss/utilities/api"  as *;

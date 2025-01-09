@@ -1,0 +1,14 @@
+.statistic-item {
+    font-size: 18px;
+    margin-bottom: 6px;
+    &:last-child {
+        margin-bottom: 20px;
+    }
+    &__label {
+        margin-bottom: 0;
+        font-weight: bold;
+    }
+    &__value {
+
+    }
+}
