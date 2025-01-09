@@ -31,7 +31,7 @@ class ProcessBankCredits implements ShouldQueue
         $link = $this -> bank->link . 'kredity/';
         //$result = Process::run('cd /var/www/banki-scrawler/crawler && node bank-credits.js bank_id='.$this->bank->id . ' link='. $link . ' &');
         //echo $result->errorOutput();
-        $output = shell_exec('cd /var/www/banki-scrawler/crawler && node bank-credits.js bank_id='.$this->bank->id . ' link='. $link . ' &');
+        $output = shell_exec('cd /var/www/crawler/www/crawler && node bank-credits.js bank_id='.$this->bank->id . ' link='. $link . ' &');
         echo $output;
     }
 }

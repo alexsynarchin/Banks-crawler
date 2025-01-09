@@ -25,7 +25,7 @@ class ProcessBanks implements ShouldQueue
      */
     public function handle(): void
     {
-        $output = shell_exec('cd /var/www/banki-scrawler/crawler && node main.js');
+        $output = shell_exec('cd /var/www/crawler/www/crawler && node main.js');
         echo $output;
     }
 }
