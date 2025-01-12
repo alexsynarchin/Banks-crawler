@@ -8,6 +8,11 @@ use App\Models\Bank;
 
 class BankController extends Controller
 {
+    public function index()
+    {
+        $banks = Bank::all();
+        return $banks;
+    }
     public function storeOrUpdate(Request $request)
     {
 

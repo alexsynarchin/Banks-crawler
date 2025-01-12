@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 use App\Http\Controllers\Api\BankController;
 
 Route::post('/banks/store-or-update', [BankController::class, 'storeOrUpdate']);
-
+Route::get('/banks', [BankController::class, 'index']);
 use App\Http\Controllers\Api\CrawlerController;
 
 Route::post('/crawler/credits', [CrawlerController::class, 'crawlingCredits']);
@@ -29,3 +29,4 @@ Route::post('/crawler/banks', [CrawlerController::class, 'crawlingBanks']);
 use App\Http\Controllers\Api\CreditController;
 
 Route::post('/credits/store-or-update', [CreditController::class, 'storeOrUpdate']);
+
