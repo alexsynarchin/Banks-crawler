@@ -21,6 +21,7 @@ use App\Http\Controllers\Api\BankController;
 
 Route::post('/banks/store-or-update', [BankController::class, 'storeOrUpdate']);
 Route::get('/banks', [BankController::class, 'index']);
+Route::get('/banks-with-credits', [BankController::class, 'banksWithCredits']);
 use App\Http\Controllers\Api\CrawlerController;
 
 Route::post('/crawler/credits', [CrawlerController::class, 'crawlingCredits']);

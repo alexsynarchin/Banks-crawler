@@ -13,6 +13,12 @@ class BankController extends Controller
         $banks = Bank::all();
         return $banks;
     }
+
+    public function banksWithCredits()
+    {
+        $banks = Bank::whereHas('credits')->with('credits')->get();
+        return $banks;
+    }
     public function storeOrUpdate(Request $request)
     {
 
