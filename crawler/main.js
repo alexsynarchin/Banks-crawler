@@ -10,12 +10,19 @@ const domain = 'http://api.finsvodka.ru';
     });
 
     const page = await browser.newPage();
-    await page.goto('https://www.sravni.ru/banki/');
+
+    try {
+        await page.goto(`https://www.sravni.ru/banki/`, { waitUntil: 'load' });
+        console.log("SUCCESS!!");
+    } catch (e) {
+        console.log(e);
+        await browser.close();
+    }
     //await page.click('text=Показать ещё 10 банков');
     const isElementVisible = async (page, cssSelector) => {
         let visible = true;
         await page
-            .waitForSelector(cssSelector, { visible: true, timeout: 2000 })
+            .waitForSelector(cssSelector, { visible: true, timeout: 7000 })
             .catch(() => {
                 visible = false;
             });
@@ -25,6 +32,7 @@ const domain = 'http://api.finsvodka.ru';
     //const element = await page.waitForSelector('::-p-xpath(//span[contains(text(), "Показать ещё 10")])');
     let loadMoreVisible = await isElementVisible(page, selectorForLoadMoreButton);
     while (loadMoreVisible) {
+
         await page
             .click(selectorForLoadMoreButton)
             .catch(() => {});
@@ -37,17 +45,18 @@ const domain = 'http://api.finsvodka.ru';
 
         const cards = document.querySelectorAll('[class^="card_wrapper"]');
 
-        for (const title of cards) {
-            const cardTitle = title.querySelector('h5').textContent;
-            const titleLink = title.querySelector('a').href;
-
-            const article = { name: cardTitle, link: titleLink };
+        for (const card of cards) {
+            const cardTitle = card.querySelector('h5').textContent;
+            const cardLink = card.querySelector('a').href;
+            const cardLogo = card.querySelector('[data-qa="Avatar"] img').src;
+            const article = { name: cardTitle, link: cardLink, logo_link: cardLogo };
             data.push(article);
         }
 
         return data;
 
     })
+    console.log(data);
     let i = 0;
     for (let item of data) {
         try {

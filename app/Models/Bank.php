@@ -14,6 +14,7 @@ class Bank extends Model
         'register_number',
         'register_number_link',
         'head_office',
+        'logo_link',
         'phones',
         'website',
     ];
