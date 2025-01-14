@@ -32,6 +32,7 @@ class BankController extends Controller
                 'register_number_link' => isset($bank['register_number_link']) ? $bank['register_number_link'] : null,
                 'head_office' => isset($bank['head_office']) ? $bank['head_office'] : null,
                 'phones' => isset($bank['phones']) ? $bank['phones'] : null,
+                'logo_link' => isset($bank['logo_link']) ? $bank['logo_link'] : null,
                 'website' => isset($bank['website']) ? $bank['website'] : null,
             ]);
         }
