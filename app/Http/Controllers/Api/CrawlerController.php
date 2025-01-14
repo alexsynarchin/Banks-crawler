@@ -25,7 +25,7 @@ class CrawlerController extends Controller
         }
         dispatch(new ProcessBanks());
         return [
-            'message ' => 'Парсинг банков со sravni.ru запущен',
+            'message' => 'Парсинг банков со sravni.ru запущен',
             'type' => 'success'
         ];
     }
@@ -46,7 +46,7 @@ class CrawlerController extends Controller
         }
 
          return [
-            'message ' => 'Парсинг кредитов со sravni.ru запущен',
+            'message' => 'Парсинг кредитов со sravni.ru запущен',
             'type' => 'success'
     ];
     }

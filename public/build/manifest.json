@@ -8,7 +8,7 @@
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CUJ9P7mJ.js",
+    "file": "assets/app-CQX4Pvii.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -63,7 +63,7 @@
     "src": "resources/js/assets/user/no-avatar-user.png"
   },
   "resources/js/views/banks/index.vue": {
-    "file": "assets/index-CCbkAndh.js",
+    "file": "assets/index-B60vBX6B.js",
     "name": "index",
     "src": "resources/js/views/banks/index.vue",
     "isDynamicEntry": true,
@@ -72,7 +72,7 @@
     ]
   },
   "resources/js/views/credits/index.vue": {
-    "file": "assets/index-D0lWr1BO.js",
+    "file": "assets/index-yTYllAkZ.js",
     "name": "index",
     "src": "resources/js/views/credits/index.vue",
     "isDynamicEntry": true,
@@ -81,7 +81,7 @@
     ]
   },
   "resources/js/views/dashboard/index.vue": {
-    "file": "assets/index-B5C5C8Sf.js",
+    "file": "assets/index-CcXubFho.js",
     "name": "index",
     "src": "resources/js/views/dashboard/index.vue",
     "isDynamicEntry": true,
@@ -90,7 +90,7 @@
     ]
   },
   "resources/js/views/error-page/401.vue": {
-    "file": "assets/401-Bo_RStY3.js",
+    "file": "assets/401-IfF7Pulb.js",
     "name": "401",
     "src": "resources/js/views/error-page/401.vue",
     "isDynamicEntry": true,
@@ -106,7 +106,7 @@
     ]
   },
   "resources/js/views/error-page/404.vue": {
-    "file": "assets/404-CPGKL3ny.js",
+    "file": "assets/404-DuqkCbqj.js",
     "name": "404",
     "src": "resources/js/views/error-page/404.vue",
     "isDynamicEntry": true,
@@ -128,7 +128,7 @@
     "isDynamicEntry": true
   },
   "resources/js/views/login/index.vue": {
-    "file": "assets/index-BkcXnwXU.js",
+    "file": "assets/index-CMWnpy7f.js",
     "name": "index",
     "src": "resources/js/views/login/index.vue",
     "isDynamicEntry": true,
@@ -143,7 +143,7 @@
     ]
   },
   "resources/js/views/user-profile/index.vue": {
-    "file": "assets/index-s5dPGsyg.js",
+    "file": "assets/index-Brz0NxB6.js",
     "name": "index",
     "src": "resources/js/views/user-profile/index.vue",
     "isDynamicEntry": true,

@@ -20,11 +20,21 @@
             >
             </el-table-column>
             <el-table-column
-                label="Название"
+                label="Логотип"
                 min-width="170px"
-                prop="name"
                 sortable
             >
+                <template #default="scope">
+                    <img style="width:80px" :src="scope.row.logo_link">
+                </template>
+            </el-table-column>
+            <el-table-column
+                label="Ссылка"
+                min-width="170px"
+            >
+                <template #default="scope">
+                    <a :href="scope.row.link" target="_blank">Перейти</a>
+                </template>
             </el-table-column>
             <el-table-column
                 label="Регистрационный номер"

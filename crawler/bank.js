@@ -5,6 +5,7 @@ const inputs = process.argv
 const bank_id = querystring.parse(inputs[2] || '').bank_id;
 const link = querystring.parse(inputs[3] || '').link;
 const domain = 'http://api.finsvodka.ru';
+//const domain = 'http://banki-scrawler.loc';
 function timeout(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -62,7 +63,7 @@ function timeout(ms) {
         })
 
 
-    console.log(data)
+
     //const element = await page.waitForSelector('::-p-xpath(//h4[contains(text(), "Общая информация о банке")])');
     console.log(bankAdditionalData);
     await browser.close();

@@ -29,7 +29,7 @@ class ProcessBankItem implements ShouldQueue
     {
         $link = $this -> bank->link;
 
-        $output = shell_exec('cd /var/www/crawler/www/crawler && node bank.js bank_id='.$this->bank->id . ' link='. $link . ' &');
+        $output = shell_exec('cd '. env('CRAWLER_PATH') .' && node bank.js bank_id='.$this->bank->id . ' link='. $link . ' &');
         echo $output;
     }
 }
