@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\ProcessBankItem;
 use Illuminate\Http\Request;
 use App\Models\Bank;
 
@@ -24,7 +25,7 @@ class BankController extends Controller
 
         $data = $request->get('data');
         foreach ($data as $bank) {
-            Bank::updateOrCreate([
+            $bank = Bank::updateOrCreate([
                 'name' => $bank['name'],
             ], [
                 'link' => $bank['link'],
@@ -35,9 +36,18 @@ class BankController extends Controller
                 'logo_link' => isset($bank['logo_link']) ? $bank['logo_link'] : null,
                 'website' => isset($bank['website']) ? $bank['website'] : null,
             ]);
+            dispatch(new ProcessBankItem($bank));
         }
 
 
         return response()->json(['message' => 'Success'],200);
+    }
+    public function storeItem(Request $request)
+    {
+        $data = $request->get('data');
+        $bank_id = $request->get('bank_id');
+        $bank = Bank::findOrFail($bank_id);
+        $bank->update($data);
+        return ['message' => 'Success'];
     }
 }

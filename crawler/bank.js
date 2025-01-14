@@ -1,14 +1,31 @@
 import puppeteer from 'puppeteer';
 import axios from "axios";
+import * as querystring from "node:querystring";
+const inputs = process.argv
+const bank_id = querystring.parse(inputs[2] || '').bank_id;
+const link = querystring.parse(inputs[3] || '').link;
+const domain = 'http://api.finsvodka.ru';
+function timeout(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 (async () => {
     const browser = await puppeteer.launch({
-        headless: false,
-        defaultViewport: null
+        headless: true,
+        defaultViewport: null,
+        args:[
+            '--disable-infobars',
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-gpu=False',
+            '--enable-webgl',
+            '--window-size=1600,900',
+            '--start-maximized',
+        ]
     }); //открытие брауз
 
     const page = await browser.newPage();
 
-    await page.goto('https://www.sravni.ru/bank/alfa-bank/');
+    await page.goto(link);
     //const testSelector =  page.locator('::-p-xpath(//[contains(text(), "Общая информация о банке")])');
 
     const bankAdditionalData = await page.evaluate(() => {
@@ -36,6 +53,16 @@ import axios from "axios";
         return data;
 
     })
+    axios.post(domain + '/api/banks/store-or-update-item', {bank_id: bank_id, data: bankAdditionalData})
+        .then((response) => {
+            console.log(response.data);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
+
+
+    console.log(data)
     //const element = await page.waitForSelector('::-p-xpath(//h4[contains(text(), "Общая информация о банке")])');
     console.log(bankAdditionalData);
     await browser.close();

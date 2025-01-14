@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 use App\Http\Controllers\Api\BankController;
 
 Route::post('/banks/store-or-update', [BankController::class, 'storeOrUpdate']);
+Route::post('/banks/store-or-update-item', [BankController::class, 'storeItem']);
 Route::get('/banks', [BankController::class, 'index']);
 Route::get('/banks-with-credits', [BankController::class, 'banksWithCredits']);
 use App\Http\Controllers\Api\CrawlerController;
